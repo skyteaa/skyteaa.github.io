@@ -1,0 +1,48 @@
+::placeholder {
+  color: #718195;
+}
+
+body {
+	font-size: 16px;
+	min-width: 320px;
+	position: relative;
+	line-height: 1;
+	font-family: $default-font;
+	overflow-x: hidden;
+	color: $text;
+}
+
+body, button, input, select, textarea {
+	font-family: $default-font;
+}
+
+html {
+	font-size: 20px;
+}
+
+h2 {
+	font-family: $source-font;
+	font-weight: bold;
+	line-height: 1.3em;
+	font-size: 2.4rem;
+	margin-bottom: 25px;
+}
+
+h1 {
+    font-family: $source-font;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 1.2em;
+    font-size: 2.8rem;
+    margin-bottom: 25px;
+	white-space: nowrap;
+}
+
+h3 {
+	font-weight: normal;
+	line-height: 1.6em;
+	color: #718195;
+	&:not(:last-child) {
+		margin-bottom: 25px;
+	}
+}
