@@ -1,207 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-
-	<meta charset="utf-8">
-	<title>Clever Landing 2.0</title>
-	<meta name="description" content="">
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
-	<!--[if lt IE 9]>
-		<script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
-	<![endif]-->
-	<link rel="stylesheet" href="css/main.min.css?0.6">
-
+	<meta charset="UTF-8">
+	<title>Document</title>
 </head>
-
 <body>
+	
+	<p>Width: <span id="width"></span> Height: <span id="height"></span></p>
+	<p>InnerWidth: <span id="innerwidth"></span> InnerHeight: <span id="innerheight"></span></p>
+	<p>OuterWidth: <span id="outerwidth"></span> OuterHeight: <span id="outerheight"></span></p>
 
-	<header class="header">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col">
-					<a href="#" class="header__logo"><img src="img/header-logo.svg" alt=""></a>
-				</div>
-				<div class="col">
-					<nav class="header__nav">
-						<a href="#" class="header__nav-link">Наш блог</a>
-						<a href="#contact" class="header__nav-link header__nav-link--btn">Связаться с нами</a>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</header>
-
-	<section class="atm">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-8">
-					<h1>Ваше приложение <br>должно<br><span>зарабатывать больше</span></h1>
-					<div class="atm__subtitle">Увеличьте выручку с встроенных покупок.<br> Раскройте весь потенциал вашего приложения.</div>
-					<div class="atm__button"><a href="#contact">Связаться с нами</a></div>
-				</div>
-				<div class="col-12 col-md-4 hidden-on-mobile">
-					<img src="img/atm-pic.svg" alt="">
-				</div>
-			</div>
-		</div>
-		<a href="#more" class="atm__more">Подробнее</a>
-	</section>
-
-	<section class="block" id="more">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6 hidden-on-mobile">
-					<img src="img/pers-pic.svg" alt="">
-				</div>
-				<div class="col-12 col-md-6">
-					<h2>Персонализация продаж</h2>
-					<h3>Создавайте индивидуальные предложения о покупке, которые появляются в самый нужный момент.</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="block">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6">
-					<h2>Автоматическое ценообразование</h2>
-					<h3>Динамическая установка цены продукта для максимизации вашей прибыли.</h3>
-				</div>
-				<div class="col-12 col-md-6">
-					<img src="img/auto-pic.svg" alt="">
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="block">
-		<div class="container">
-			<div class="row align-items-center row--crm">
-				<div class="col-12 col-md-6">
-					<div class="owl-carousel app-slider">
-						<img src="http://placehold.it/280x500/2E0E4E/808080?Text=1" alt="">
-						<img src="http://placehold.it/280x500/D2D3D4/808080?Text=2" alt="">
-						<img src="http://placehold.it/280x500/DFFB9C/808080?Text=3" alt="">
-					</div>
-				</div>
-				<div class="col-12 col-md-6">
-					<h2>Абсолютно любой дизайн</h2>
-					<h3>Используйте готовый шаблон из каталога или сделайте свой. Вносите любые изменения вне релизного цикла.</h3>
-					<div class="tags">
-						<div class="tags__item">HTML</div>
-						<div class="tags__item">CSS</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="block">
-		<div class="container">
-			<div class="row align-items-center">
-				<div class="col-12 col-md-6">
-					<h2>Все для разработчиков</h2>
-					<h3>Валидация чеков. Хранение статуса подписки. Завтрашние возможности магазинов уже вчера. Все интеграции в мире.</h3>
-					<div class="logos">
-						<img src="img/logo-01.png" alt="" width="159">
-						<img src="img/logo-02.png" alt="" width="87">
-						<img src="img/logo-03.png" alt="" width="114">
-						<img src="img/logo-04.png" alt="" width="74">
-					</div>
-				</div>
-				<div class="col-12 col-md-6">
-					<div class="tabs">
-						<div class="tabs__links">
-							<div class="tabs__link active">App Store</div>
-							<div class="tabs__link">Google Play</div>
-						</div>
-						<div class="tabs__content">
-							<div class="tabs__tab active">
-								<pre><code class="language-php">POST /messages
-	from = 'App me@myapp.io'
-	to = 'bob@gmail.com'
-	subject = 'Hello'
-	text = 'Welcome to our amazing app!'
-	html = '<p>Welcome to our amazing app!</p>'</code></pre>
-							</div>
-							<div class="tabs__tab">
-								<pre><code class="language-php">POST /messages
-	from = 'App 2 me@myapp.io'
-	to = 'bob@gmail.com'
-	subject = 'Hello'
-	text = 'Welcome to our amazing app!'
-	html = '<p>Welcome to our amazing app!</p>'</code></pre>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="recipes">
-		<div class="container">
-			<div class="row">
-				<div class="col-12 col-md-6 hidden-on-mobile">
-					<img src="img/recipes-pic.svg" alt="">
-				</div>
-				<div class="col-12 col-md-6">
-					<h2>Рецепты и консалтинг</h2>
-					<h3><b>Что и как делать? Не знаете, с чего начать путь?</b><br>Мы вам подарим книгу с проверенными на практике
-						рецептами и деталями их реализации.</h3>
-					<h3><b>Хотите индивидуальный подход?</b><br>Мы готовы погрузиться в ваши бизнес-процессы и помочь вам увеличить
-						выручку.</h3>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<section class="contact" id="contact">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-12 col-md-6">
-					<h2>Заинтриговали?</h2>
-					<h3>Чтобы обеспечить высочайший уровень сервиса, мы подключаем новых клиентов постепенно.</h3>
-					<h3>Оставьте контактные данные, и мы с вами свяжемся.</h3>
-				</div>
-				<div class="col-12 col-md-5">
-					<form action="">
-						<input type="text" name="name" placeholder="Имя и фамилия">
-						<input type="email" name="email" placeholder="Рабочая почта">
-						<textarea name="message" placeholder="Расскажите про проект, задачи и ваш таймлайн"></textarea>
-						<button disabled>Связаться с нами</button>
-					</form>
-				</div>
-			</div>
-		</div>
-	</section>
-
-	<footer class="footer">
-		<div class="container">
-			<div class="row justify-content-between align-items-center">
-				<div class="col-12 col-md-6">
-					<a href="#"><img src="img/footer-logo.svg" alt=""></a>
-				</div>
-				<div class="col-12 col-md-6">
-					<nav class="footer__nav">
-						<ul>
-							<li><a href="#" class="footer__link">About</a></li>
-							<li><a href="#" class="footer__link">Terms</a></li>
-							<li><a href="#" class="footer__link">Privacy Policy</a></li>
-							<li><a href="#" class="footer__link footer__link--orange">Sign in</a></li>
-						</ul>
-					</nav>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-	<script src="js/scripts.min.js"></script>
-
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script>
+		$(document).ready(function(){
+			$('#width').html( $(window).width() );
+			$('#height').html( $(window).height() );
+			$('#innerwidth').html( $(window).innerWidth() );
+			$('#innerheight').html( $(window).innerHeight() );
+			$('#outerwidth').html( $(window).outerWidth() );
+			$('#outerheight').html( $(window).outerHeight() );
+		});
+	</script>
 </body>
-
 </html>
