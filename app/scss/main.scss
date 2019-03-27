@@ -1,0 +1,57 @@
+@import "reset";
+@import "vars";
+@import "fonts";
+
+@import "blocks/header";
+@import "blocks/medals";
+@import "blocks/login";
+@import "blocks/wall";
+@import "blocks/messages";
+@import "blocks/chat";
+@import "blocks/success";
+
+::placeholder {
+	color: #666;
+}
+
+body {
+	font-size: 16px;
+	min-width: 1024px;
+	position: relative;
+	line-height: 1;
+	font-family: $default-font;
+	overflow-x: hidden;
+    color: $text;
+    font-weight: 500;
+}
+
+.wrapper {
+    padding-top: 80px;
+}
+
+.container {
+    max-width: 1024px;
+    margin: 0 auto;
+    width: 100%;
+
+    &--wall {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 0 50px;
+    }
+
+    &--header {
+        position: fixed;
+        left: 50%;
+        top: 0;
+        transform: translate(-50%,0);
+        z-index: 2;
+    }
+
+    &--messages {
+        max-width: 693px;
+        margin-top: 24px;
+    }
+
+}

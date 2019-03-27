@@ -1,0 +1,79 @@
+.success {
+    
+    background-color: lightblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+
+    .container {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        max-width: 1140px;
+    }
+
+    &__video {
+        width: 100%;
+        max-width: 670px;
+        video {
+            width: 100%;
+        }
+    }
+
+    &__result {
+        width: 404px;
+        height: 409px;
+        background: url('../img/icon-success.png') no-repeat center;
+        background-size: cover;
+        padding: 170px 0 0 24px;
+        & > div {
+            text-align: center;
+            max-width: 230px;
+        }
+        p {
+            color: #636363;
+            line-height: 36px;
+            font-weight: 900;
+            &:nth-child(1) {
+                font-size: 34px;
+                font-weight: 900;
+            }
+            &:nth-child(2) {
+                font-size: 21px;
+                font-weight: 500;
+            }
+            &:nth-child(3) {
+                font-size: 34px;
+                font-weight: 900;
+            }
+        }
+    }
+
+    &__desc {
+        text-align: center;
+        color: #fff;
+        font-size: 18px;
+        line-height: 24px;
+        font-weight: 700;
+        margin-top: 40px;
+    }
+
+    &__next {
+        text-align: center;
+        font-size: 0;
+        margin-top: 35px;
+        a {
+            display: inline-block;
+            line-height: 60px;
+            padding: 0 33px;
+            background: #62B370;
+            border-radius: 40px;
+            color: #fff;
+            text-transform: uppercase;
+            font-weight: 700;
+            font-size: 14px;
+        }
+    }
+
+}
