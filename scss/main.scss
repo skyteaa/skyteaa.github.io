@@ -55,3 +55,15 @@ body {
     }
 
 }
+
+body {
+    background: #fff url('../img/bg_transp.png') repeat;
+}
+
+body.login {
+    background: #fff;
+}
+
+body.success {
+    background: #fff url('../img/bg_blue.png') repeat;
+}
