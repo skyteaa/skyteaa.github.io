@@ -400,6 +400,16 @@
 	</div>
 
 	<script src="js/scripts.min.js"></script>
+	<script type="text/javascript">
+		if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent)) {
+			document.write('<script src="js/ie/js/EventHelpers.js"><\/script>');
+			document.write('<script src="js/ie/js/cssQuery-p.js"><\/script>');
+			document.write('<script src="js/ie/js/jcoglan.com/sylvester.js"><\/script>');
+			document.write('<script src="js/ie/js/cssSandpaper.js"><\/script>');
+			document.write('<script src="js/ie/flexibility.js"><\/script>');
+			flexibility(document.getElementsByClassName('header'));
+		}
+	</script>
 
 </body>
 </html>
