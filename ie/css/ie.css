@@ -10,7 +10,7 @@ body {
     -sand-transform: translate(98px, 0);
 }
 
-.header {
+#header {
     -js-display: flex;
     display: flex;
 }
