@@ -14,3 +14,8 @@ body {
     -js-display: flex;
     display: flex;
 }
+
+.header__logo {
+    filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/icon-vk.png',sizingMethod='scale');
+    -ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/icon-vk.png',sizingMethod='scale')";
+}
