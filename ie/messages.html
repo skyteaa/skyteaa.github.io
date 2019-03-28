@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>НаСвязи! / Сообщения</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="container container--header">
+			<div class="header">
+				<div class="header__logo">НаСвязи!</div>
+				<div class="header__search">
+					<div class="header__search-input"></div>
+					<div class="header__search-button"></div>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-user"></div>
+					<div class="header__menu-burger"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container container--messages">
+
+			<div class="messages">
+				<div class="wall__title">Мои сообщения</div>
+				<div class="messages__list">
+					
+                    <div class="messages__item" data-chat-id="1">
+                        <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-01.png')"></div>
+                        <div class="messages__item-meta">
+                            <div class="messages__item-name">Фокси Тейл</div>
+                            <div class="messages__item-text">Так и знал, что ты трус!!!!11!!</div>
+                        </div>
+                        <div class="messages__item-buttons">
+                            <div class="wall__reply" data-popup="popup-fail" data-chat-id="1">Ответить</div>
+                            <div class="wall__report" data-popup="popup-success" data-spopup-id="1">Пожаловаться</div>
+                        </div>
+                    </div>
+
+                    <div class="messages__item locked" data-chat-id="2">
+                        <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-02.png')"></div>
+                        <div class="messages__item-meta">
+                            <div class="messages__item-name">Бешеный Эмоджи</div>
+                            <div class="messages__item-text">Сева, чего ты фотки выложил с мамой? Что как маленький?</div>
+                        </div>
+                        <div class="messages__item-buttons">
+                            <div class="wall__reply" data-popup="popup-fail" data-chat-id="2">Ответить</div>
+                            <div class="wall__report" data-popup="popup-success" data-spopup-id="2">Пожаловаться</div>
+                        </div>
+                    </div>
+
+                    <div class="messages__item locked" data-chat-id="3">
+                        <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-03.png')"></div>
+                        <div class="messages__item-meta">
+                            <div class="messages__item-name">Миракл Шансайн</div>
+                            <div class="messages__item-text">Ты такой глупый! Всех уже достал!</div>
+                        </div>
+                        <div class="messages__item-buttons">
+                            <div class="wall__reply" data-popup="popup-fail" data-chat-id="3">Ответить</div>
+                            <div class="wall__report" data-popup="popup-success" data-spopup-id="3">Пожаловаться</div>
+                        </div>
+                    </div>
+
+                    <div class="messages__item locked maybe" data-chat-id="4">
+                        <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
+                        <div class="messages__item-meta">
+                            <div class="messages__item-name">Никита Войнов</div>
+                            <div class="messages__item-text">Привет, как дела?</div>
+                        </div>
+                        <div class="messages__item-buttons">
+                            <div class="wall__reply" data-popup="popup-success" data-chat-id="4">Ответить</div>
+                            <div class="wall__report" data-popup="popup-fail" data-spopup-id="4">Пожаловаться</div>
+                        </div>
+                    </div>
+
+                    <div class="messages__item locked" data-chat-id="5">
+                        <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-05.png')"></div>
+                        <div class="messages__item-meta">
+                            <div class="messages__item-name">Невидящее Око</div>
+                            <div class="messages__item-text">Алло, очкарик! Ты знаешь, что ты всех в классе бесишь?</div>
+                        </div>
+                        <div class="messages__item-buttons">
+                            <div class="wall__reply" data-popup="popup-fail">Ответить</div>
+                            <div class="wall__report" data-popup="popup-success">Пожаловаться</div>
+                        </div>
+                    </div>
+
+				</div>
+			</div>
+		</div>
+
+    </div>
+    
+	<div class="chat" data-chat-id="1">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Фокси Тейл</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Почему это я трус? Потому что не стал идти на ужастик с вами? Он же 18+.</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-01.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Фокси Тейл</div>
+						<div class="chat__item-text">Да ты просто маменькин сынок. Больше не будем с тобой дружить.</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Нееет, возьмите меня с собой! Попрошу брата купить билет на сайте. </div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-01.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Фокси Тейл</div>
+						<div class="chat__item-text">Твой поезд ушёл… Кек, вообще непонятно, почему мы с тобой общались. </div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="chat" data-chat-id="2">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Бешеный Эмоджи</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Это у мамы был день рождения! Чего ты дразнишься?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-02.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Бешеный Эмоджи</div>
+						<div class="chat__item-text">Малявка, малявкааааааа.</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Сам ты малявка. И вообще, как тебя зовут на самом деле?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-02.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Бешеный Эмоджи</div>
+						<div class="chat__item-text">Я малявкам не рассказываю секреты :p</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
+
+	<div class="chat" data-chat-id="3">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Миракл Шансайн</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Почему я глупый?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-03.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Миракл Шансайн</div>
+						<div class="chat__item-text">Да ты даже в доте лажаешь. Ещё и по физике два получил.</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">До конца четверти ещё далеко, я ещё всё исправлю! А в доте я вообще спец.</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-03.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Миракл Шансайн</div>
+						<div class="chat__item-text">Ну не знаю, не знаю. Дай свои логин-пароль, посмотрю насколько ты хорош в доте. </div>
+					</div>
+                </div>
+                
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Я подумаю….</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
+
+	<div class="chat maybe" data-chat-id="4">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Никита Войнов</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Никита Войнов</div>
+						<div class="chat__item-text">Привет, как дела?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Тролли достают(((</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+                        <div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Никита Войнов</div>
+						<div class="chat__item-text">Пойдём лучше в футбол поиграем!</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Давай, я могу через час. </div>
+					</div>
+                </div>
+                
+				<div class="chat__item">
+                    <div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Никита Войнов</div>
+						<div class="chat__item-text">Класс! Договорились</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Пойдём</button>
+			</div>
+
+		</div>
+	
+    </div>
+    
+	<div class="spopup spopup--messages" data-spopup-id="1">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">Суперборец с троллями,</div>
+
+            <div class="spopup__subtitle">вот тебе +1.</div>
+
+            <div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+            <div class="spopup__button">
+                <button class="spopup__close">Продолжить</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<div class="spopup spopup--messages" data-spopup-id="2">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">Молодец!</div>
+
+            <div class="spopup__subtitle">Получай +1 балл.</div>
+
+            <div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+            <div class="spopup__button">
+                <button class="spopup__close">Продолжить</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<div class="spopup spopup--messages" data-spopup-id="3">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">-1 тролль,</div>
+
+            <div class="spopup__subtitle">+1 балл.</div>
+
+            <div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+            <div class="spopup__button">
+                <button class="spopup__close">Продолжить</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<div class="spopup spopup--messages" data-spopup-id="4">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">Троллей бояться — в интернет не ходить</div>
+
+            <div class="spopup__desc">Присмотрись! Это же никакой не тролль, а Друг, разговор с ним лишь поднимет настроение. Не стоит совсем уж закрываться от мира из-за пары грубиянов.</div>
+
+            <div class="spopup__button">
+                <button class="spopup__close">Попробовать ещё раз</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<div class="spopup spopup--messages" data-spopup-id="5">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">Так держать!</div>
+
+            <div class="spopup__subtitle">Лови +1!</div>
+
+            <div class="spopup__desc">Отлично, что ты не потерял сообщение друга среди троллей.</div>
+
+            <div class="spopup__button">
+                <a href="success.html" class="spopup__close">Продолжить</a>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<script src="js/scripts.min.js"></script>
+
+	<div class="medals">
+		<div class="medals__counter">4</div>
+		<div class="medals__label">Помогай Севе <br>и получай ещё <br>больше баллов!</div>
+	</div>
+
+</body>
+</html>

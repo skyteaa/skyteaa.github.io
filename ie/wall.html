@@ -1,0 +1,402 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>НаСвязи! / Стена</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="css/main.min.css">
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="container container--header">
+			<div class="header">
+				<div class="header__logo">НаСвязи!</div>
+				<div class="header__search">
+					<div class="header__search-input"></div>
+					<div class="header__search-button"></div>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-user"></div>
+					<div class="header__menu-burger"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container container--wall">
+			<div class="sidebar">
+				<div class="sidebar__user">
+					<div class="sidebar__user-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="sidebar__user-name">Сева Брусникин</div>
+					<div class="sidebar__user-desc">Дата рождения: 10 августа<br>Образование: СОШ №33</div>
+				</div>
+				<div class="sidebar__links">
+					<div class="sidebar__links-link sidebar__links-link--friends"></div>
+					<div class="sidebar__links-link sidebar__links-link--music"></div>
+					<div class="sidebar__links-link sidebar__links-link--messages"></div>
+				</div>
+			</div>
+
+			<div class="wall">
+				<div class="wall__title">Моя стена</div>
+				<div class="wall__list">
+					
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
+							<div class="wall__item-name">Белая <br>Жесть</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text">Такой ты, конечно, лузер! Зачем ты вообще что-то стримишь<br> в твиче,  если так плохо играешь? Донатов всё равно не<br> дождёшься.</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail" data-chat-id="1">Ответить</div>
+								<div class="wall__report" data-popup="popup-success" data-spopup-id="1">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
+							<div class="wall__item-name">Happy <br>Finger</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text" style="font-style: italic; color: #ff3d00; font-size: 24px; font-weight: 700">Да, с таким лицом только и<br> выкладывать фотки...</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail" data-chat-id="2">Ответить</div>
+								<div class="wall__report" data-popup="popup-success" data-spopup-id="2">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background: #000"></div>
+							<div class="wall__item-name">Черный <br>квадрат</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text" style="font-size: 24px;">Лоооол, ты что дурак совсем?<br> 🤣🤣🤣🤣🤣</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail" data-chat-id="3">Ответить</div>
+								<div class="wall__report" data-popup="popup-success" data-spopup-id="3">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-03.png')"></div>
+							<div class="wall__item-name">Настёна <br>Сластёна</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text">Сева, если не поставишь мне лайки на всех фотках, то я расскажу всем твой СЕКРЕТ.</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail" data-chat-id="4">Ответить</div>
+								<div class="wall__report" data-popup="popup-success" data-spopup-id="4">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="chat" data-chat-id="1">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Белая Жесть</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Я стану супер-киберспортсменом!</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Белая Жесть</div>
+						<div class="chat__item-text">Ха-ха, тебе до Virtus.pro также далеко, как мне до Луны!.</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">А ты то что? Давно в доту рубишь?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Белая Жесть</div>
+						<div class="chat__item-text">Уж подольше тебя!</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Да ты хоть знаешь как я играю??!</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="chat" data-chat-id="2">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Happy Finger</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">А сам то можешь своё лицо показать? Или так и будешь прятаться за картинкой?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Happy Finger</div>
+						<div class="chat__item-text">Интернет не готов к моей красоте…</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Ага, ты, наверное сам в прыщах, поэтому боишься.</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Happy Finger</div>
+						<div class="chat__item-text">Кто? Я? Да я сейчас вообще взломаю твой аккаунт и покажу всем твои РЕАЛЬНЫЕ фотки.</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
+
+	<div class="chat" data-chat-id="3">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Черный Квадрат</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Сам ты дурак!! Кто ты вообще? Мы знакомы?</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-color: #000"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Черный Квадрат</div>
+						<div class="chat__item-text">Нет ты дурак!! Угадай кто я.</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Ты, наверное, Коля из 6А.</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-color: #000"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Черный Квадрат</div>
+						<div class="chat__item-text">Ты никогда не узнаешь правды!</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
+
+	<div class="chat" data-chat-id="4">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Настёна Сластёна</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Никаких секретов я тебе не говорил. Ребята, не верьте ей!</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-03.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Настёна Сластёна</div>
+						<div class="chat__item-text">Все узнают, все узнают!</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Да что узнают? Я даже не знаю кто ты!!!!!!</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-03.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Настёна Сластёна</div>
+						<div class="chat__item-text">Все узнают твой самый страшный секрет</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
+
+	<div class="spopup" data-spopup-id="1">
+		
+		<div class="spopup__wrapper">
+
+			<div class="spopup__pic"></div>
+
+			<div class="spopup__title">Молодец!</div>
+
+			<div class="spopup__subtitle">Получай +1 балл.</div>
+
+			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+			<div class="spopup__button">
+				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="spopup" data-spopup-id="2">
+		
+		<div class="spopup__wrapper">
+
+			<div class="spopup__pic"></div>
+
+			<div class="spopup__title">Так держать!</div>
+
+			<div class="spopup__subtitle">Лови +1!</div>
+
+			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+			<div class="spopup__button">
+				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="spopup" data-spopup-id="3">
+		
+		<div class="spopup__wrapper">
+
+			<div class="spopup__pic"></div>
+
+			<div class="spopup__title">-1 тролль,</div>
+
+			<div class="spopup__subtitle">+1 балл.</div>
+
+			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+			<div class="spopup__button">
+				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="spopup" data-spopup-id="4">
+		
+		<div class="spopup__wrapper">
+
+			<div class="spopup__pic"></div>
+
+			<div class="spopup__title">Суперборец с троллями,</div>
+
+			<div class="spopup__subtitle">вот тебе +1.</div>
+
+			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
+
+			<div class="spopup__button">
+				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

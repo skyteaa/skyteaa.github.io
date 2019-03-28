@@ -1,0 +1,65 @@
+.header {
+
+    background: #3990F1;
+    border-radius: 0px 0px 10px 10px;
+    padding: 14px 60px;
+    display: flex;
+    align-items: center;
+
+    &__logo {
+        font-size: 36px;
+        font-weight: 900;
+        color: #FFFFFF;
+        margin-right: 67px;
+        font-size: 0;
+        width: 53px;
+        height: 31px;
+        overflow: hidden;
+        background: url('../img/icon-vk.png') no-repeat center;
+        background-size: cover;
+    }
+
+    &__search {
+        font-size: 0;
+        &-input {
+            display: inline-block;
+            vertical-align: middle;
+            background: #FFFFFF;
+            border-radius: 4px;
+            width: 326px;
+            height: 30px;
+        }
+        &-button {
+            display: inline-block;
+            vertical-align: middle;
+            margin-left: 20px;
+            width: 34px;
+            height: 34px;
+            background: url('../img/icon-search.png') no-repeat center;
+            background-size: cover;
+        }
+    }
+
+    &__menu {
+        margin-left: auto;
+        font-size: 0;
+        &-user {
+            display: inline-block;
+            vertical-align: middle;
+            width: 30px;
+            height: 36px;
+            background: url('../img/icon-user.png') no-repeat center;
+            background-size: cover;
+        }
+        &-burger {
+            display: inline-block;
+            vertical-align: middle;
+            width: 40px;
+            height: 31px;
+            background: url('../img/icon-burger.png') no-repeat center;
+            background-size: cover;
+            margin-left: 36px;
+        }
+    }
+
+}
