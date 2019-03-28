@@ -9,3 +9,8 @@ body {
 .login__button {
     -sand-transform: translate(98px, 0);
 }
+
+.header {
+    -js-display: flex;
+    display: flex;
+}
