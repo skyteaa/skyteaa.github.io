@@ -6,17 +6,18 @@
 
     &__item {
         height: 110px;
-        background: #CEE6FE;
+        background: #4680C2;
         border-radius: 10px;
         display: flex;
         align-items: center;
         padding: 20px;
         margin-bottom: 20px;
+        color: #fff;
 
         &.banned {
             background-color: #e4e4e4;
-            .messages__item-name {
-                color: #636363;
+            .messages__item-name, .messages__item-text {
+                color: #c4c4c4;
             }
             .wall__reply, .wall__report {
                 background-color: #c4c4c4;
@@ -26,6 +27,21 @@
                 background-image: url('../img/avatar-banned.png') !important;
                 background-color: transparent !important;
                 background-size: cover !important;
+            }
+            &.maybe {
+                .messages__item-avatar {
+                    background-image: url('../img/messages-avatar-04.png') !important;
+                    background-color: transparent !important;
+                    background-size: cover !important;
+                }
+                background: #62B370;
+                .messages__item-name, .messages__item-text {
+                    color: #fff;
+                }
+                .wall__reply, .wall__report {
+                    background-color: #c4c4c4;
+                    cursor: not-allowed;
+                }
             }
         }
 
@@ -63,14 +79,12 @@
     }
 
     &__item-name {
-        color: #3990F1;
         font-weight: 900;
         font-size: 18px;
         line-height: 22px;
     }
 
     &__item-text {
-        color: #333333;
         font-size: 14px;
         line-height: 20px;
     }

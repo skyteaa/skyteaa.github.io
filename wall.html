@@ -8,6 +8,9 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<link rel="icon" href="img/favicon/favicon.ico">
 	<link rel="stylesheet" href="css/main.min.css">
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="ie.css">
+	<![endif]-->
 </head>
 
 <body>
@@ -43,10 +46,10 @@
 			</div>
 
 			<div class="wall">
-				<div class="wall__title">Моя стена</div>
+				<div class="wall__title">Мои записи</div>
 				<div class="wall__list">
 					
-					<div class="wall__item">
+					<div class="wall__item" data-chat-id="1">
 						<div class="wall__item-meta">
 							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
 							<div class="wall__item-name">Белая <br>Жесть</div>
@@ -60,13 +63,13 @@
 						</div>
 					</div>
 
-					<div class="wall__item">
+					<div class="wall__item" data-chat-id="2">
 						<div class="wall__item-meta">
 							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
 							<div class="wall__item-name">Happy <br>Finger</div>
 						</div>
 						<div class="wall__item-message">
-							<div class="wall__item-text" style="font-style: italic; color: #ff3d00; font-size: 24px; font-weight: 700">Да, с таким лицом только и<br> выкладывать фотки...</div>
+							<div class="wall__item-text" style="font-style: italic; color: #00FF29; font-size: 24px; font-weight: 700">Да, с таким лицом только и<br> выкладывать фотки...</div>
 							<div class="wall__item-buttons">
 								<div class="wall__reply" data-popup="popup-fail" data-chat-id="2">Ответить</div>
 								<div class="wall__report" data-popup="popup-success" data-spopup-id="2">Пожаловаться</div>
@@ -74,7 +77,7 @@
 						</div>
 					</div>
 
-					<div class="wall__item">
+					<div class="wall__item" data-chat-id="3">
 						<div class="wall__item-meta">
 							<div class="wall__item-avatar" style="background: #000"></div>
 							<div class="wall__item-name">Черный <br>квадрат</div>
@@ -88,7 +91,7 @@
 						</div>
 					</div>
 
-					<div class="wall__item">
+					<div class="wall__item" data-chat-id="4">
 						<div class="wall__item-meta">
 							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-03.png')"></div>
 							<div class="wall__item-name">Настёна <br>Сластёна</div>
@@ -116,7 +119,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -124,7 +127,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Белая Жесть</div>
@@ -148,11 +151,11 @@
 					</div>
 				</div>
 
-				<div class="chat__item">
-					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
-					<div class="chat__item-message">
-						<div class="chat__item-name">Сева Брусникин</div>
-						<div class="chat__item-text">Да ты хоть знаешь как я играю??!</div>
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">У Троллей всегда <br>свободного времени <br>больше, чем у тебя.</div>
+						<div class="chat__result-desc">Стоит ли ввязываться в сетевые баталии?</div>
 					</div>
 				</div>
 
@@ -174,7 +177,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -182,7 +185,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Happy Finger</div>
@@ -206,6 +209,14 @@
 					</div>
 				</div>
 
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">У Троллей всегда <br>свободного времени <br>больше, чем у тебя.</div>
+						<div class="chat__result-desc">Стоит ли ввязываться в сетевые баталии?</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="chat__button">
@@ -224,7 +235,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -232,7 +243,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-color: #000"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Черный Квадрат</div>
@@ -256,6 +267,14 @@
 					</div>
 				</div>
 
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">У Троллей всегда <br>свободного времени <br>больше, чем у тебя.</div>
+						<div class="chat__result-desc">Стоит ли ввязываться в сетевые баталии?</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="chat__button">
@@ -274,7 +293,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -282,7 +301,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/wall-avatar-03.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Настёна Сластёна</div>
@@ -306,6 +325,14 @@
 					</div>
 				</div>
 
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">У Троллей всегда <br>свободного времени <br>больше, чем у тебя.</div>
+						<div class="chat__result-desc">Стоит ли ввязываться в сетевые баталии?</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="chat__button">
@@ -316,7 +343,7 @@
 	
 	</div>
 
-	<div class="spopup" data-spopup-id="1">
+	<div class="spopup spopup--wall" data-spopup-id="1">
 		
 		<div class="spopup__wrapper">
 
@@ -329,14 +356,14 @@
 			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
 
 			<div class="spopup__button">
-				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+				<a href="#" class="spopup__close">Продолжить</a>
 			</div>
 
 		</div>
 
 	</div>
 
-	<div class="spopup" data-spopup-id="2">
+	<div class="spopup spopup--wall" data-spopup-id="2">
 		
 		<div class="spopup__wrapper">
 
@@ -349,14 +376,14 @@
 			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
 
 			<div class="spopup__button">
-				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+				<a href="#" class="spopup__close">Продолжить</a>
 			</div>
 
 		</div>
 
 	</div>
 
-	<div class="spopup" data-spopup-id="3">
+	<div class="spopup spopup--wall" data-spopup-id="3">
 		
 		<div class="spopup__wrapper">
 
@@ -369,14 +396,14 @@
 			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
 
 			<div class="spopup__button">
-				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+				<a href="#" class="spopup__close">Продолжить</a>
 			</div>
 
 		</div>
 
 	</div>
 
-	<div class="spopup" data-spopup-id="4">
+	<div class="spopup spopup--wall" data-spopup-id="4">
 		
 		<div class="spopup__wrapper">
 
@@ -389,11 +416,16 @@
 			<div class="spopup__desc">Лучше сразу «Пожаловаться» на троллей. Если им отвечать, то они никогда не перестанут издеваться.</div>
 
 			<div class="spopup__button">
-				<a href="locked-wall.html" class="spopup__close">Продолжить</a>
+				<a href="#" class="spopup__close">Продолжить</a>
 			</div>
 
 		</div>
 
+	</div>
+
+	<div class="medals">
+		<div class="medals__counter">0</div>
+		<div class="medals__label">Помогай Севе <br>и получай ещё <br>больше баллов!</div>
 	</div>
 
 	<script src="js/scripts.min.js"></script>

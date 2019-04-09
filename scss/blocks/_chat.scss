@@ -8,7 +8,6 @@
     background-color: rgba(#000, 0.5);
     overflow: hidden;
     z-index: 10;
-    cursor: pointer;
     
     opacity: 0;
     visibility: hidden;
@@ -28,7 +27,6 @@
         max-height: 100vh;
         overflow: auto;
         transition: 300ms linear;
-        cursor: default;
     }
 
     &.active {
@@ -41,11 +39,12 @@
 
     &.maybe {
         .chat__item-message {
-            background: #CDEDD3;
+            background: #62B370;
+            color: #fff;
         }
         .chat__item--answer {
             .chat__item-message {
-                background: #CEE6FE;
+                background: #4680C2;
             }
         }
     }
@@ -64,16 +63,20 @@
     }
 
     &__item {
-        display: flex;
         align-items: center;
         justify-content: flex-start;
+        display: none;
+        &--showed {
+            display: flex;
+        }
         &:not(:last-child) {
             margin-bottom: 20px;
         }
         &--answer {
             flex-direction: row-reverse;
             .chat__item-message {
-                background: #FED7CE;
+                background: #EF6F5D;
+                color: #333;
             }
             .chat__item-avatar {
                 margin-right: 0;
@@ -98,12 +101,13 @@
         background: #CEE6FE;
         width: 100%;
         max-width: 345px;
+        background: #4680C2;
+        color: #fff;
     }
 
     &__item-name {
         font-size: 18px;
         line-height: 22px;
-        color: #3990F1;
         margin-bottom: 8px;
         font-weight: 900;
     }
@@ -111,7 +115,6 @@
     &__item-text {
         font-size: 14px;
         line-height: 20px;
-        color: #333;
     }
 
     &__button {
@@ -228,6 +231,39 @@
         color: #fff;
         border: 0;
         line-height: 42px;
+    }
+
+}
+
+.chat__result {
+
+    display: none;
+    margin: 0 auto;
+    &.active {
+        display: flex;
+    }
+    align-items: center;
+
+    &-pic {
+        width: 100%;
+        max-width: 119px;
+        height: 152px;
+        background: url('../img/icon-chat-result.png') no-repeat center;
+        background-size: cover;
+        margin-right: 30px;
+    }
+
+    &-title {
+        font-size: 24px;
+        line-height: 32px;
+        font-weight: 900;
+        color: #333;
+        margin-bottom: 32px;
+    }
+
+    &-desc {
+        font-size: 14px;
+        color: #333;
     }
 
 }

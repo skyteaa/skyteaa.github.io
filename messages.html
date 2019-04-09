@@ -46,7 +46,7 @@
                         </div>
                     </div>
 
-                    <div class="messages__item locked" data-chat-id="2">
+                    <div class="messages__item" data-chat-id="2">
                         <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-02.png')"></div>
                         <div class="messages__item-meta">
                             <div class="messages__item-name">Бешеный Эмоджи</div>
@@ -58,7 +58,7 @@
                         </div>
                     </div>
 
-                    <div class="messages__item locked" data-chat-id="3">
+                    <div class="messages__item" data-chat-id="3">
                         <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-03.png')"></div>
                         <div class="messages__item-meta">
                             <div class="messages__item-name">Миракл Шансайн</div>
@@ -70,7 +70,7 @@
                         </div>
                     </div>
 
-                    <div class="messages__item locked maybe" data-chat-id="4">
+                    <div class="messages__item maybe" data-chat-id="4">
                         <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
                         <div class="messages__item-meta">
                             <div class="messages__item-name">Никита Войнов</div>
@@ -82,15 +82,15 @@
                         </div>
                     </div>
 
-                    <div class="messages__item locked" data-chat-id="5">
+                    <div class="messages__item" data-chat-id="5">
                         <div class="messages__item-avatar" style="background-image: url('img/messages-avatar-05.png')"></div>
                         <div class="messages__item-meta">
                             <div class="messages__item-name">Невидящее Око</div>
                             <div class="messages__item-text">Алло, очкарик! Ты знаешь, что ты всех в классе бесишь?</div>
                         </div>
                         <div class="messages__item-buttons">
-                            <div class="wall__reply" data-popup="popup-fail">Ответить</div>
-                            <div class="wall__report" data-popup="popup-success">Пожаловаться</div>
+                            <div class="wall__reply" data-popup="popup-fail" data-chat-id="5">Ответить</div>
+                            <div class="wall__report" data-popup="popup-success" data-spopup-id="5">Пожаловаться</div>
                         </div>
                     </div>
 
@@ -108,7 +108,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -116,7 +116,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-01.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Фокси Тейл</div>
@@ -140,6 +140,14 @@
 					</div>
 				</div>
 
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">Получил ещё больше<br> обидных сообщений,<br> а тролля не переспорил :-(</div>
+						<div class="chat__result-desc">Стоит ли тратить на это своё время?</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="chat__button">
@@ -158,7 +166,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -166,7 +174,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-02.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Бешеный Эмоджи</div>
@@ -190,6 +198,14 @@
 					</div>
 				</div>
 
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">Получил ещё больше<br> обидных сообщений,<br> а тролля не переспорил :-(</div>
+						<div class="chat__result-desc">Стоит ли тратить на это своё время?</div>
+					</div>
+				</div>
+
 			</div>
 
 			<div class="chat__button">
@@ -208,7 +224,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -216,7 +232,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-03.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Миракл Шансайн</div>
@@ -240,11 +256,11 @@
 					</div>
                 </div>
                 
-				<div class="chat__item">
-					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
-					<div class="chat__item-message">
-						<div class="chat__item-name">Сева Брусникин</div>
-						<div class="chat__item-text">Я подумаю….</div>
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">Получил ещё больше<br> обидных сообщений,<br> а тролля не переспорил :-(</div>
+						<div class="chat__result-desc">Стоит ли тратить на это своё время?</div>
 					</div>
 				</div>
 
@@ -266,7 +282,7 @@
 
 			<div class="chat__list">
 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Никита Войнов</div>
@@ -274,7 +290,7 @@
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -282,15 +298,15 @@
 					</div>
 				</div>
 
-				<div class="chat__item">
-                        <div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
+				<div class="chat__item chat__item--showed">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Никита Войнов</div>
 						<div class="chat__item-text">Пойдём лучше в футбол поиграем!</div>
 					</div>
 				</div>
 
-				<div class="chat__item chat__item--answer">
+				<div class="chat__item chat__item--answer chat__item--showed">
 					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Сева Брусникин</div>
@@ -298,7 +314,7 @@
 					</div>
                 </div>
                 
-				<div class="chat__item">
+				<div class="chat__item chat__item--showed">
                     <div class="chat__item-avatar" style="background-image: url('img/messages-avatar-04.png')"></div>
 					<div class="chat__item-message">
 						<div class="chat__item-name">Никита Войнов</div>
@@ -314,7 +330,65 @@
 
 		</div>
 	
-    </div>
+	</div>
+	
+	<div class="chat" data-chat-id="5">
+
+		<div class="chat__wrapper">
+
+			<div class="chat__title">Мой диалог с Невидящее Око</div>
+
+			<div class="chat__list">
+
+				<div class="chat__item chat__item--showed">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Да о чём ты говоришь? Я вообще почти ничего не говорю. </div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer chat__item--showed">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-05.png'); background-color: silver"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Невидящее Око</div>
+						<div class="chat__item-text">Ага, а на математике вчера, кто всё решил за 5 минут?</div>
+					</div>
+				</div>
+
+				<div class="chat__item">
+					<div class="chat__item-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Сева Брусникин</div>
+						<div class="chat__item-text">Но мне нравится математика(((</div>
+					</div>
+				</div>
+
+				<div class="chat__item chat__item--answer">
+					<div class="chat__item-avatar" style="background-image: url('img/messages-avatar-05.png'); background-color: silver"></div>
+					<div class="chat__item-message">
+						<div class="chat__item-name">Невидящее Око</div>
+						<div class="chat__item-text">А ты всё равно молчи, а то мы тупыми выглядим. </div>
+					</div>
+				</div>
+				
+				<div class="chat__result">
+					<div class="chat__result-pic"></div>
+					<div class="chat__result-meta">
+						<div class="chat__result-title">Получил ещё больше<br> обидных сообщений,<br> а тролля не переспорил :-(</div>
+						<div class="chat__result-desc">Стоит ли тратить на это своё время?</div>
+					</div>
+				</div>
+
+			</div>
+
+			<div class="chat__button">
+				<button class="chat__close">Попробовать ещё раз</button>
+			</div>
+
+		</div>
+	
+	</div>
     
 	<div class="spopup spopup--messages" data-spopup-id="1">
 		
@@ -407,7 +481,27 @@
             <div class="spopup__desc">Отлично, что ты не потерял сообщение друга среди троллей.</div>
 
             <div class="spopup__button">
-                <a href="success.html" class="spopup__close">Продолжить</a>
+                <button class="spopup__close">Продолжить</button>
+            </div>
+
+        </div>
+    
+    </div>
+
+	<div class="spopup spopup--messages" data-spopup-id="6">
+		
+        <div class="spopup__wrapper">
+
+            <div class="spopup__pic"></div>
+
+            <div class="spopup__title">Так держать!</div>
+
+            <div class="spopup__subtitle">Лови +1!</div>
+
+            <div class="spopup__desc">Общение с друзьями - высшая ценность, а можно ещё и договориться погулять и на время забыть про интернет с его неприятными обитателями.</div>
+
+            <div class="spopup__button">
+                <button class="spopup__close">Продолжить</button>
             </div>
 
         </div>

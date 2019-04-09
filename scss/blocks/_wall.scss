@@ -23,18 +23,18 @@
         background-position: center;
         background-size: cover;
         &--friends {
-            width: 54px;
-            height: 50px;
+            width: 45px;
+            height: 48px;
             background-image: url('../img/icon-friends.png');
         }
         &--music {
-            width: 51px;
-            height: 54px;
+            width: 39px;
+            height: 48px;
             background-image: url('../img/icon-music.png');
         }
         &--messages {
-            width: 54px;
-            height: 54px;
+            width: 64px;
+            height: 48px;
             background-image: url('../img/icon-messages-disabled.png');
             position: relative;
             &--active {
@@ -68,7 +68,7 @@
     &__user-name {
         margin-top: 20px;
         font-size: 24px;
-        color: #3990F1;
+        color: #3B6394;
         font-weight: 900;
     }
 
@@ -87,7 +87,7 @@
 
     &__title {
         font-size: 36px;
-        color: #636363;
+        color: #3B6394;
         padding: 15px 0;
         font-weight: 900;
     }
@@ -97,7 +97,7 @@
     }
 
     &__item {
-        background: #CEE6FE;
+        background: #4680C2;
         border-radius: 10px;
         display: flex;
         align-items: flex-start;
@@ -108,8 +108,8 @@
         
         &--banned {
             background-color: #e4e4e4;
-            .wall__item-name {
-                color: #636363;
+            .wall__item-name, .wall__item-text {
+                color: #C4C4C4 !important;
             }
             .wall__reply, .wall__report {
                 background-color: #c4c4c4;
@@ -141,7 +141,7 @@
         margin-top: 12px;
         text-align: center;
         font-size: 18px;
-        color: #3990F1;
+        color: #fff;
         font-weight: 900;
         line-height: 1.4em;
     }
@@ -152,7 +152,7 @@
 
     &__item-text {
         font-size: 14px;
-        color: #333;
+        color: #fff;
         line-height: 1.4em;
     }
 
@@ -170,7 +170,7 @@
         cursor: pointer;
         position: relative;
         padding: 13px 26px 12px 56px;
-        background: #62B370;
+        background: #3B6394;
         border-radius: 20px;
         font-size: 11px;
         font-weight: 700;
@@ -195,7 +195,7 @@
         cursor: pointer;
         position: relative;
         padding: 13px 16px 12px 41px;
-        background: #3990F1;
+        background: #7290B1;
         border-radius: 20px;
         font-size: 11px;
         font-weight: 700;
