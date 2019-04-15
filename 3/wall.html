@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+	<meta charset="utf-8">
+	<title>НаСвязи! / Стена</title>
+	<meta name="description" content="">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<link rel="icon" href="img/favicon/favicon.ico">
+	<link rel="stylesheet" href="css/main.min.css">
+	<!--[if lt IE 10]>
+		<link rel="stylesheet" type="text/css" href="ie.css">
+	<![endif]-->
+</head>
+
+<body>
+
+	<div class="wrapper">
+
+		<div class="container container--header">
+			<div class="header">
+				<div class="header__logo">НаСвязи!</div>
+				<div class="header__search">
+					<div class="header__search-input"></div>
+					<div class="header__search-button"></div>
+				</div>
+				<div class="header__menu">
+					<div class="header__menu-user"></div>
+					<div class="header__menu-burger"></div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container container--wall">
+			<div class="sidebar">
+				<div class="sidebar__user">
+					<div class="sidebar__user-avatar" style="background-image: url('img/avatar.png')"></div>
+					<div class="sidebar__user-name">Сева Брусникин</div>
+					<div class="sidebar__user-desc">Дата рождения: 10 августа<br>Образование: СОШ №33</div>
+				</div>
+				<div class="sidebar__links">
+					<div class="sidebar__links-link sidebar__links-link--friends"></div>
+					<div class="sidebar__links-link sidebar__links-link--music"></div>
+					<div class="sidebar__links-link sidebar__links-link--messages"></div>
+				</div>
+			</div>
+
+			<div class="wall">
+				<div class="wall__title">Мои записи</div>
+				<div class="wall__list">
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-02.png')"></div>
+							<div class="wall__item-name">Happy <br>Finger</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text">Ты чё, мелкий, будешь мне хамить, я тебя офлайн достану! Я знаю, что ты живёшь на Дубовой улице!</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail">Ответить</div>
+								<div class="wall__report" data-popup="popup-success">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background-image: url('img/wall-avatar-01.png')"></div>
+							<div class="wall__item-name">Белая <br>Жесть</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text">Взломаю твой профиль, если будешь тут сильно выпендриваться!</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail">Ответить</div>
+								<div class="wall__report" data-popup="popup-success">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="wall__item">
+						<div class="wall__item-meta">
+							<div class="wall__item-avatar" style="background: #000"></div>
+							<div class="wall__item-name">Черный <br>квадрат</div>
+						</div>
+						<div class="wall__item-message">
+							<div class="wall__item-text">Чё, вы там 33ей школе совсем всё?</div>
+							<div class="wall__item-buttons">
+								<div class="wall__reply" data-popup="popup-fail">Ответить</div>
+								<div class="wall__report" data-popup="popup-success">Пожаловаться</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="spopup bpopup js-bpopup-start">
+		
+		<div class="spopup__wrapper">
+
+			<div class="bpopup__avatar"></div>
+
+			<div class="bpopup__title">Друг, это снова Сева.</div>
+
+			<div class="bpopup__desc">Мне снова нужна твоя помощь. Кибербулли совсем с ума сошли и начали теперь мне угрожать(((.</div>
+
+			<div class="spopup__button" style="margin-top: 105px">
+				<a href="#" class="spopup__close js-show-resolve-button">Помочь севе</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="spopup bpopup js-bpopup-var1-result">
+		
+		<div class="spopup__wrapper">
+
+			<div class="bpopup__result-avatar"></div>
+
+			<div class="bpopup__title">Не «корми» троллей информацией, а то можно случайно лишнего сказать.</div>
+
+			<div class="spopup__button" style="margin-top: 70px">
+				<a href="#" class="spopup__close js-resolve-problem">Попробовать ещё раз</a>
+			</div>
+
+		</div>
+
+    </div>
+    
+	<div class="spopup bpopup js-bpopup-var2-result">
+		
+		<div class="spopup__wrapper">
+
+			<div class="bpopup__result-avatar"></div>
+
+            <div class="bpopup__title">Иногда просто «Пожаловаться» не помогает. </div>
+            
+            <div class="bpopup__desc">Тут серьёзные тролли, которые даже сделали себе новые страницы((</div>
+
+			<div class="spopup__button" style="margin-top: 70px">
+				<a href="#" class="spopup__close js-resolve-problem">Попробовать ещё раз</a>
+			</div>
+
+		</div>
+
+    </div>
+    
+	<div class="spopup bpopup js-bpopup-var3-result">
+		
+		<div class="spopup__wrapper">
+
+			<div class="bpopup__result-avatar"></div>
+
+			<div class="bpopup__title">Когда тролли не просто издеваются, а начинают угрожать, значит пора рассказать об этом родителям.</div>
+
+			<div class="spopup__button" style="margin-top: 70px">
+				<a href="success.html" class="spopup__close">Продолжить</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="spopup bpopup js-bpopup-choose">
+		
+		<div class="spopup__wrapper">
+
+			<div class="bpopup__avatar"></div>
+
+			<div class="bpopup__title">Что мне следует делать?</div>
+
+			<div class="spopup__button" style="margin-top: 90px;">
+				<a href="wall-why.html" class="spopup__close" style="width: 326px; padding-left: 0; padding-right: 0;">Узнать, откуда они всё знают</a>
+			</div>
+
+			<div class="spopup__button" style="margin-top: 30px;">
+				<a href="wall-report.html" class="spopup__close" style="width: 326px;">Пожаловаться на всех</a>
+			</div>
+
+			<div class="spopup__button" style="margin-top: 30px;">
+				<a href="#" class="spopup__close js-parents-popup" style="width: 326px;">Рассказать родителям</a>
+			</div>
+
+		</div>
+
+	</div>
+
+	<div class="silver-button js-resolve-problem disabled">Решить проблему <span class="js-silver-brackets">(<span class="js-silver-counter">6</span>)</span></div>
+
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>

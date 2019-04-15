@@ -1,0 +1,38 @@
+.medals {
+
+    position: fixed;
+    bottom: 30px;
+    left: 30px;
+    display: flex;
+    align-items: center;
+    padding: 15px 20px 15px 10px;;
+    z-index: 9;
+    background: #3B6394;
+    border-radius: 10px;
+    cursor: default;
+
+    ::selection {
+        background-color: transparent;
+    }
+
+    &__counter {
+        width: 68.22px;
+        height: 71px;
+        background: url('../img/icon-medal.png') no-repeat center;
+        background-size: cover;
+        font-size: 36px;
+        color: #fff;
+        font-weight: 900;
+        padding-top: 8px;
+        text-align: center;
+        margin-right: 12px;
+    }
+
+    &__label {
+        font-size: 18px;
+        line-height: 21px;
+        color: #FFFFFF;
+        font-weight: 900;
+    }
+
+}
